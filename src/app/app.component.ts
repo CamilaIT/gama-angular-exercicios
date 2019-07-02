@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'gama-angular-exercicios';
   contador = 10;
+  cor = 'green'
 
   inc(){
     this.contador++
@@ -16,4 +17,6 @@ export class AppComponent {
   dec(){
     this.contador--
   }
+
+
 }

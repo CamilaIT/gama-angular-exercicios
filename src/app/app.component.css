@@ -1,5 +1,8 @@
+
+
 h1{
     margin: 25px 5px 5px 5px;
+    color: gray;
 }
 
 h2{
@@ -12,6 +15,8 @@ h2{
 .tamanho{
     width:   100px;
     margin:  10px;
+    font-weight: bold;
+    color: white;
 }
 
 .custom{

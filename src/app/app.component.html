@@ -9,6 +9,10 @@
       </h2>
       <button (click)="dec()" class="btn btn-warning tamanho">--</button>
       <button (click)="inc()" class="btn btn-primary tamanho">++</button>
+
+      <div *ngIf="contador >= 5">
+        <h2>Contador maior que 5</h2>
+      </div>
   </div>
 
 
