@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gama-angular-exercicios';
+  contador = 5;
+
+  inc(){
+    this.contador++
+  }
+
+  dec(){
+    this.contador--
+  }
 }
