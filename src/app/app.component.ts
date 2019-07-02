@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gama-angular-exercicios';
-  contador = 5;
+  contador = 10;
 
   inc(){
     this.contador++
