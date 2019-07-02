@@ -1,24 +1,3 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="row">
-  <div class="col-sm-6" align="center">
-      <h1>Incremento/ Decremento</h1>
-
-      <h2 [ngStyle]="{ color: contador < 10 ? '#ffc107' : '#007bff' }"
-      [ngClass]="{custom: contador === 10}">
-        {{ contador }}
-      </h2>
-      <button (click)="dec()" class="btn btn-warning tamanho">--</button>
-      <button (click)="inc()" class="btn btn-primary tamanho">++</button>
-
-      <div *ngIf="contador >= 5">
-        <h2>Contador maior que 5</h2>
-      </div>
-  </div>
-
-
-
-  <div  class="col-sm-6" align="center">
-    <h1>Digite a cor desejada</h1>
-  </div>
-</div>
+<app-contador></app-contador>
 
