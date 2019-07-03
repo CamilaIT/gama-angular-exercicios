@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Lista } from 'src/typings/lista';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gama-angular-exercicios';
- 
 
+  // lista: Lista[] = [];
+
+  // constructor(private apiService: ApiService) {
+  //   apiService.getLista().subscribe(value => {
+  //     this.lista = value;
+  //   });
+  // }
+ 
+  
 }
