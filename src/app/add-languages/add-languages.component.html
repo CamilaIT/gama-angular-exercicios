@@ -1,0 +1,51 @@
+<form #formLanguage="ngForm">
+
+    <!-- {{ language }} -->
+    
+          <div>
+            Linguagem de Programação
+         
+            <input
+              type="text"
+              [(ngModel)]="language.name"
+              #name="ngModel"
+              required
+              name="name"
+            />
+         
+            <!-- <div *ngIf="name.errors && name.touched">
+              <div *ngIf="name?.errors.required">Nome da linguagem é obrigatória</div>
+            </div> -->
+          </div>
+         
+          <div>
+            Criador
+         
+            <input
+              type="text"
+              [(ngModel)]="language.creator"
+              #creator="ngModel"
+              required
+              name="creator"
+            />
+         
+            <!-- <div *ngIf="creator.errors && creator.touched">
+              <div *ngIf="creator?.errors.required">Criador é obrigatório</div>
+            </div> -->
+          </div>
+         
+          <div>
+           Ano de Criação:
+         
+            <input
+              type="number"
+              [(ngModel)]="language.year"
+              #year="ngModel"
+              required
+              name="year"
+            />
+          </div>
+         
+          <button (click)="sendLanguage()">Enviar</button>
+         </form>
+         <!-- [disabled]="formLanguage.invalid"  -->

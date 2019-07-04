@@ -8,12 +8,16 @@ import { Lista } from 'src/typings/lista';
 })
 export class ApiService {
 
-  readonly url = 'https://alefesouza.dev/gama/languages.php'
+  
 
   constructor(private http: HttpClient) { }
 
   getLista(): Observable<Lista[]>{
-    return this.http.get<Lista[]>(`${this.url}`);
+    return this.http.get<Lista[]>('http://localhost:3000/languages');
+  }
+
+  addLanguage(language: Lista){ 
+    return this.http.post<Lista>('http://localhost:3000/languages', language);
   }
 }
 

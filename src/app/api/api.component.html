@@ -1,12 +1,20 @@
 <h1>Lista de Linguagens</h1>
 
-<ul>
-    <li *ngFor="let item of lista">
-        {{ item.name }} - 
-        {{ item.creator }} - 
-        {{ item.year }} 
-    </li>
-</ul>
+
+
+<div *ngFor="let autor of lista">
+    {{ autor.name }}  
+    {{ autor.creator }} 
+    {{ autor.year }} 
+</div>
+
+<div>
+   <p>Linguagem criada antes dos anos 2000</p> 
+</div>
+
+<div>
+    <p>Linguagem criada depois dos anos 2000</p> 
+ </div>
    
 
 
