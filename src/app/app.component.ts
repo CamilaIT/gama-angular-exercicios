@@ -10,7 +10,6 @@ import { ApiService } from './api.service';
 export class AppComponent {
   title = 'gama-angular-exercicios';
 
-  // lista: Lista[] = [];
 
   // constructor(private apiService: ApiService) {
   //   apiService.getLista().subscribe(value => {

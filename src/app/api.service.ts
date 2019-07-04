@@ -16,3 +16,6 @@ export class ApiService {
     return this.http.get<Lista[]>(`${this.url}`);
   }
 }
+
+
+//recomendado usar httpClient com Angular
