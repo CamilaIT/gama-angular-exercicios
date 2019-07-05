@@ -13,9 +13,9 @@
               name="name"
             />
          
-            <!-- <div *ngIf="name.errors && name.touched">
+            <div *ngIf="name.errors && name.touched">
               <div *ngIf="name?.errors.required">Nome da linguagem é obrigatória</div>
-            </div> -->
+            </div>
           </div>
          
           <div>
@@ -29,9 +29,9 @@
               name="creator"
             />
          
-            <!-- <div *ngIf="creator.errors && creator.touched">
+            <div *ngIf="creator.errors && creator.touched">
               <div *ngIf="creator?.errors.required">Criador é obrigatório</div>
-            </div> -->
+            </div>
           </div>
          
           <div>
@@ -42,10 +42,10 @@
               [(ngModel)]="language.year"
               #year="ngModel"
               required
-              name="year"
+              name="year" 
             />
           </div>
          
-          <button (click)="sendLanguage()">Enviar</button>
+          <button [disabled]="formLanguage.invalid" (click)="sendLanguage()">Enviar</button>
          </form>
-         <!-- [disabled]="formLanguage.invalid"  -->
+         

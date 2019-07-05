@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CampoYearPipe implements PipeTransform {
 
-  transform(value: any, ...args: any[]): any {
-    return null;
+  transform(value: number, ...args: any[]): any {
+    return value < 2000 ? 'linguagem criada antes de 2000' : 'linguagem criada depois de 2000';
   }
 
 }

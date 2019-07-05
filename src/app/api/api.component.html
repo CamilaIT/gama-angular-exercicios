@@ -3,18 +3,13 @@
 
 
 <div *ngFor="let autor of lista">
-    {{ autor.name }}  
-    {{ autor.creator }} 
-    {{ autor.year }} 
-</div>
+        {{ autor.name }}  
+        {{ autor.creator }}
+        {{ autor.year }} 
+        {{ autor.year | campoYear}}      
+</div> 
 
-<div>
-   <p>Linguagem criada antes dos anos 2000</p> 
-</div>
 
-<div>
-    <p>Linguagem criada depois dos anos 2000</p> 
- </div>
-   
+
 
 
